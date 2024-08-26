@@ -140,45 +140,22 @@ ol, ul {
         width: 80%;
     }
 }
-.figma-prototype {
-    text-align: center;
-    margin-bottom: 30px;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.figma-prototype h2 {
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-.figma-prototype p {
-    margin-bottom: 20px;
-}
-
-.prototype-button {
+..figma-prototype .prototype-button {
     display: inline-block;
     padding: 12px 24px;
     background-color: #3498db;
     color: #ffffff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: all 0.3s ease;
     font-weight: bold;
 }
 
-.prototype-button:hover {
+.figma-prototype .prototype-button:hover,
+.figma-prototype .prototype-button:focus {
     background-color: #2980b9;
+    color: #ffffff;
     text-decoration: none;
     transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
-@media (max-width: 600px) {
-    .prototype-button {
-        width: 100%;
-        box-sizing: border-box;
-    }
-}
-
