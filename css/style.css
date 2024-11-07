@@ -91,7 +91,7 @@ ol, ul {
 }
 
 .figma-prototypes {
-    text-align: left; /* Left-align the Sigma section */
+    text-align: left; /* Left-align the Figma section */
 }
 
 .prototype-buttons {
@@ -132,18 +132,6 @@ ol, ul {
     background-color: #27ae60;
 }
 
-@media (max-width: 600px) {
-    .prototype-buttons {
-        flex-direction: column;
-        align-items: flex-start; /* Align buttons to the left on mobile */
-    }
-
-    .prototype-button {
-        width: 100%; /* Ensure buttons take full width on mobile */
-        margin-bottom: 10px;
-    }
-}
-
 /* New styles for the chat section */
 .chat-section {
     text-align: center;
@@ -158,7 +146,7 @@ ol, ul {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Ensure frames stay side by side */
     margin-top: 20px;
 }
 
@@ -177,7 +165,9 @@ ol, ul {
     border: none;
 }
 
-/* Responsive adjustments */
+/* Remove media query to keep frames side by side on all screen sizes */
+/* You can comment out or remove the following media query if you want frames to stay side by side */
+/*
 @media (max-width: 800px) {
     .chat-windows {
         flex-direction: column;
@@ -188,3 +178,4 @@ ol, ul {
         margin-bottom: 20px;
     }
 }
+*/
