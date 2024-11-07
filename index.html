@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Existing head content -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rezio AI Demo Instructions</title>
@@ -21,10 +22,16 @@
             </a>
         </section>
         <section class="instructions">
-            <h2>Demo Instructions for Rezio AI Assistant(playground links below)</h2>
+            <h2>Demo Instructions for Rezio AI Assistant</h2>
             <ol>
-                <li><strong>Open Links in Separate Incognito Windows:</strong> Open the provided links side by side in separate incognito tabs or windows. You need to be the buyer and the agent both, else the chat will get stuck without an agent's response whenever needed.</li>
-                <li><strong>Log in as a Buyer:</strong> Once logged in, click on the FIRST property listed at the top to start the chat.</li>
+                <li><strong>Interact with Both Chats:</strong> Use the chat windows below to interact as both the buyer and the agent simultaneously.</li>
+                <li><strong>Login Credentials:</strong> When prompted, use the following credentials:
+                    <ul>
+                        <li><strong>Buyer</strong>: Username - <code>yc-buyer</code>, Password - <code>buyer123</code></li>
+                        <li><strong>Agent</strong>: Username - <code>yc-agent</code>, Password - <code>agent123</code></li>
+                    </ul>
+                </li>
+                <li><strong>Start the Chat:</strong> As the buyer, click on the FIRST property listed at the top to start the chat.</li>
                 <li><strong>Agent Chat:</strong> In the agent's chat, click on the button located right under "Ongoing Negotiations."</li>
                 <li><strong>Ask Questions and Make Offers:</strong> As a buyer, feel free to ask questions about the property and make offers.</li>
                 <li><strong>Submitting Documents:</strong> Whenever you are requested for a cheque or a document, simply say, "Here is the cheque," "Here are the documents," or enter a number if an ID is requested.</li>
@@ -32,20 +39,32 @@
                 <li><strong>Agent Intervention:</strong> If a question requires the agent's intervention, check the agent's chat for what the AI is asking for, and respond on behalf of the agent.</li>
             </ol>
         </section>
+        <section class="chat-section">
+            <h2>Agent and Buyer Chat Side by Side</h2>
+            <p>Interact with both the agent and buyer chats simultaneously below:</p>
+            <div class="chat-windows">
+                <div class="chat-window">
+                    <iframe src="https://playground-buyer.rezio.ai" frameborder="0"></iframe>
+                </div>
+                <div class="chat-window">
+                    <iframe src="https://playground-agent.rezio.ai" frameborder="0"></iframe>
+                </div>
+            </div>
+        </section>
         <section class="demo-links">
-            <h2>Rezio AI Assistant Playground links</h2>
-            <p>Please open these links side by side to see how AI mediates between Buyer and Realtor tabs.</p>
+            <h2>Rezio AI Assistant Playground Links</h2>
+            <p>If you prefer, you can also open these links directly in your browser:</p>
             <div class="link-box">
                 <h3>For Buyer:</h3>
                 <p>URL: <a href="https://playground-buyer.rezio.ai" target="_blank">https://playground-buyer.rezio.ai</a></p>
-                <p>Username: yc-buyer</p>
-                <p>Password: buyer123</p>
+                <p>Username: <code>yc-buyer</code></p>
+                <p>Password: <code>buyer123</code></p>
             </div>
             <div class="link-box">
-                <h3>For Realtor:</h3>
+                <h3>For Agent:</h3>
                 <p>URL: <a href="https://playground-agent.rezio.ai" target="_blank">https://playground-agent.rezio.ai</a></p>
-                <p>Username: yc-agent</p>
-                <p>Password: agent123</p>
+                <p>Username: <code>yc-agent</code></p>
+                <p>Password: <code>agent123</code></p>
             </div>
         </section>
     </div>

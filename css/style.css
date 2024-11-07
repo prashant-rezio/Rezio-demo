@@ -1,3 +1,4 @@
+/* Existing CSS */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -140,5 +141,50 @@ ol, ul {
     .prototype-button {
         width: 100%; /* Ensure buttons take full width on mobile */
         margin-bottom: 10px;
+    }
+}
+
+/* New styles for the chat section */
+.chat-section {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.chat-section h2 {
+    color: #2c3e50;
+}
+
+.chat-windows {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.chat-window {
+    width: 375px; /* Standard mobile width */
+    height: 667px; /* Standard mobile height */
+    border: 1px solid #3498db; /* Use your brand's primary color */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(52, 152, 219, 0.3); /* Adjust opacity as needed */
+}
+
+.chat-window iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 800px) {
+    .chat-windows {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chat-window {
+        margin-bottom: 20px;
     }
 }
